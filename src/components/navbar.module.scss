@@ -1,0 +1,23 @@
+.navbar {
+    height: 10vh;
+    min-height: 100px;
+    background: linear-gradient(to bottom, #4747e3, #216cc2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 30vw;
+    max-width: 150px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7474%) hue-rotate(96deg) brightness(95%) contrast(91%);
+    padding: 5vw;
+
+}
+
+.menuIcon {
+    width: 15vw;
+    max-width: 65px;
+    padding: 5vw;
+
+}

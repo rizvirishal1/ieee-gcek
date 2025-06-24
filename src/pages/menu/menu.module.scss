@@ -1,0 +1,16 @@
+.menuIcons {
+    filter: brightness(0) saturate(100%) invert(45%) sepia(91%) saturate(2950%) hue-rotate(202deg) brightness(88%) contrast(90%);
+    width: 5vw;
+    max-width: 40px;
+    padding: 1.5vw;
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-size: large;
+    }
+}

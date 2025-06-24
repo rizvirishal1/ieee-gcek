@@ -4,7 +4,9 @@ import { Navigate } from 'react-router';
 import { Route } from 'react-router';
 import { Routes } from 'react-router';
 //pages
-import Home from './pages/Home';
+import Home from "./pages/home/Home"
+import Layout from "./layout/Layout";
+import Menu from "./pages/menu/Menu";
 //styles
 import './App.css';
 
@@ -13,8 +15,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="/home" element={<Layout><Home /></Layout>} />
+          <Route path="/:id/menu" element={<Layout><Menu /></Layout>} />
+          <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
       </BrowserRouter>
     </div>
